@@ -35,5 +35,11 @@ Check installation:
 ```mvn clean install```
 
 # 🚀 Running the Tests
-```Run All Tests```
+option1:
+```mvn clean test```
+
+option2: run testng.xml file manually or use thie command:
+```mvn clean test -DsuiteXmlFile=testng.xml```
+
+
 
