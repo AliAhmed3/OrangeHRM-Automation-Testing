@@ -21,3 +21,19 @@ Before running the tests, ensure you have installed:
 - **Java 24** → [Download](https://www.oracle.com/java/technologies/javase/jdk24-archive-downloads.html)
 - **Maven** → [Download](https://maven.apache.org/)
 - **Allure** Commandline → [Download](https://docs.qameta.io/allure/#_installing_a_commandline)
+
+Check installation:
+- ```java -version```
+- ```mvn -version```
+- ```allure --version ```
+
+## 2️⃣ Clone the Repository
+- ```git clone https://github.com/your-username/orangehrm-automation.git```
+- ```cd orangehrm-automation```
+
+## 3️⃣ Install Dependencies
+```mvn clean install```
+
+# 🚀 Running the Tests
+```Run All Tests```
+
