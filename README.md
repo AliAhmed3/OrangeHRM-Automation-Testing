@@ -7,12 +7,12 @@ It also integrates Allure Reports for test reporting and Java Faker for generati
 
 # 🛠 Tech Stack
 - **Java 24** for Programming language
-- **Selenium WebDriver**	for Web automation
+- **Selenium WebDriver** for Web automation
 - **TestNG** for Test execution framework
 - **Maven** for Build & dependency management
 - **Allure Reports** for visual test reporting
 - **Java Faker** for Random test data generation
-- **Page Object Model**	for Test design pattern
+- **Page Object Model**	for Test design pattern so, All locators and actions are defined inside the respective page class.
 - **Fluent Interface Pattern** for Improves readability of test steps
 
 # ⚙️ Setup & Installation
@@ -40,6 +40,25 @@ option1:
 
 option2: run testng.xml file manually or use thie command:
 ```mvn clean test -DsuiteXmlFile=testng.xml```
+
+# 📊 Generating Reports
+## Allure Report
+After running the tests:
+```allure serve target/allure-resultsl```
+
+# 🔄Scenario
+1. Navigate to the website
+2. Login using:
+○ Username: Admin
+○ Password: admin123
+3. Click on the Admin tab in the left-side menu
+4. Capture the number of records found
+5. Click on Add button and fill in required user data
+6. Click on Save
+7. Verify that the number of records increased by 1
+8. Search by the newly created username
+9. Delete the user
+10. Verify that the number of records decreased by 1
 
 # 📂 Project Structure
 ```orangehrm-automation/
@@ -82,8 +101,6 @@ option2: run testng.xml file manually or use thie command:
 │   ├── 📂 surefire-reports              # TestNG HTML reports
 │   └── ...
 │
-            ├── 📂 config
-│   ├── config.properties               # App URL, browser type, credentials
-│
-└── 📂 resources
-    └── test-data.json                   # Optional JSON test data
+```
+# 🔄 Test Data
+- **Java Faker is used for generating dynamic data**
