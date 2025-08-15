@@ -41,5 +41,49 @@ option1:
 option2: run testng.xml file manually or use thie command:
 ```mvn clean test -DsuiteXmlFile=testng.xml```
 
+# 📂 Project Structure
+```orangehrm-automation/
+│
+├── 📜 pom.xml                          
+├── 📜 testng.xml                       # TestNG suite configuration                       
+│
+├── 📂 src
+│   ├── 📂 main
+│   │   └── 📂 java
+│   │       └── 📂 utils
+│   │           ├── ConfigReader.java   # Reads config.properties
+│   │           ├── DriverFactory.java  # WebDriver setup 
+│   │           └── Utility.java        # Faker-based random data
+            └── 📂 pages                # Page Object Model classes
+│           │   ├── AddUserPage.java     # adduser page locators & actions
+│           │   ├── LoginPage.java      # Login page locators & actions
+│           │   ├── DashboardPage.java  # Dashboard page locators & actions
+│           │   ├── AdminPage.java      # Add/Search/Delete Employee actions
+│           │   └── ...
 
+│   │          
+│   │
+│   └── 📂 test
+│       └── 📂 java
+│           ├── 📂 tests                # Test classes
+│           │   ├── BaseTest.java       # Common setup/teardown for tests
+│           │   ├── fullScenarioTest.java     
+│           │
+│           └── 📂 listeners            # TestNG Listeners
+│               └── MethodListener.java   
+│               └── TestListener.java    
+│       └── 📂 resources
+                📂 TestData            
+│                         └── environment.properties     
+│                         └── validLogin.json      #data  
 
+├── 📂 target                            # Maven output folder (auto-generated)
+│   ├── 📂 allure-results                # Allure results (after running tests)
+│   ├── 📂 surefire-reports              # TestNG HTML reports
+│   └── ...
+│
+├── 📂 config
+│   ├── config.properties               # App URL, browser type, credentials
+│
+└── 📂 resources
+    └── test-data.json                   # Optional JSON test data
