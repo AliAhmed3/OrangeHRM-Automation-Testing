@@ -104,3 +104,6 @@ After running the tests:
 ```
 # 🔄 Test Data
 - **Java Faker is used for generating dynamic data**
+
+# 📷 Allure report generated
+![allure report.jpg](allure report.jpg)
