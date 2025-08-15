@@ -44,7 +44,7 @@ option2: run testng.xml file manually or use thie command:
 # 📊 Generating Reports
 ## Allure Report
 After running the tests:
-```allure serve target/allure-resultsl```
+```allure serve target/allure-results```
 
 # 🔄Scenario
 1. Navigate to the website
