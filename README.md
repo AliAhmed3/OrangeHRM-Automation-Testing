@@ -82,7 +82,7 @@ option2: run testng.xml file manually or use thie command:
 │   ├── 📂 surefire-reports              # TestNG HTML reports
 │   └── ...
 │
-├── 📂 config
+            ├── 📂 config
 │   ├── config.properties               # App URL, browser type, credentials
 │
 └── 📂 resources
