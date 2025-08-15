@@ -7,7 +7,7 @@ It also integrates Allure Reports for test reporting and Java Faker for generati
 
 # 🛠 Tech Stack
 - **Java 24** for Programming language
-- **IntelliJ IDEA Community Edition ** for IDE
+- **IntelliJ IDEA Community Edition** for IDE
 - **Selenium WebDriver** for Web automation
 - **TestNG** for Test execution framework
 - **Maven** for Build & dependency management
