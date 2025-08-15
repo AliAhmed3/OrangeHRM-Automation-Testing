@@ -14,3 +14,10 @@ It also integrates Allure Reports for test reporting and Java Faker for generati
 - **Java Faker** for Random test data generation
 - **Page Object Model**	for Test design pattern
 - **Fluent Interface Pattern** for Improves readability of test steps
+
+# ⚙️ Setup & Installation
+## 1️⃣ Prerequisites
+Before running the tests, ensure you have installed:
+- **Java 24** → [Download](https://www.oracle.com/java/technologies/javase/jdk24-archive-downloads.html)
+- **Maven** → [Download](https://maven.apache.org/)
+- **Allure** Commandline → [Download](https://docs.qameta.io/allure/#_installing_a_commandline)
