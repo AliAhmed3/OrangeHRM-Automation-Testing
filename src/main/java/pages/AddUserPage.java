@@ -44,7 +44,7 @@ public class AddUserPage {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
             wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//div[@class='oxd-input-group.oxd-input-field-bottom-space']")
+                    By.xpath("//div[contains(@class,'oxd-autocomplete-text-input oxd-autocomplete-text-input--active')]")
             ));
         } catch (Exception ignored) {
         }
