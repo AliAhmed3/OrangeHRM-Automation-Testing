@@ -41,6 +41,7 @@ public class fullScenarioTest extends BaseTest  {
 
         // Step 3: Capture initial record count
         int initialCount = new AdminPage(DriverFactory.getDriver()).getRecordCount();
+        System.out.println("Initial Count: " + initialCount);
 
         // Step 4: Add new user
         new AdminPage(DriverFactory.getDriver()).clickAdd()
@@ -54,6 +55,7 @@ public class fullScenarioTest extends BaseTest  {
 
         // Verify record count increased by 1
         int afterAddCount = new AdminPage(DriverFactory.getDriver()).getRecordCount();
+        System.out.println("after add Count: " + afterAddCount);
         Assert.assertEquals(afterAddCount, initialCount + 1, "Record count should increase by 1");
 
         // Step 6: Search and Delete the user
@@ -63,6 +65,7 @@ public class fullScenarioTest extends BaseTest  {
         // Click on the reset button then Verify record count decreased by 1
         new AdminPage(DriverFactory.getDriver()).clickReset();
         int afterDeleteCount = new AdminPage(DriverFactory.getDriver()).getRecordCount();
+        System.out.println("after Delete Count: " + afterDeleteCount);
         Assert.assertEquals(afterDeleteCount, initialCount, "Record count should decrease by 1");
     }
 

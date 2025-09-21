@@ -11,7 +11,7 @@ public class LoginPage {
     private final By usernameField = By.name("username");
     private final By passwordField = By.name("password");
     private final By loginButton = By.cssSelector("button[type='submit']");
-    private final By dashboardHeader = By.xpath("(//span[text()='Dashboard'])[1]");
+
 
     /* Constructor */
     public LoginPage(WebDriver driver) {
