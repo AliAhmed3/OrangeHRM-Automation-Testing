@@ -40,8 +40,13 @@ public class fullScenarioTest extends BaseTest  {
         new DashboardPage(DriverFactory.getDriver()).goToAdmin();
 
         // Step 3: Capture initial record count
+        
         int initialCount = new AdminPage(DriverFactory.getDriver()).getRecordCount();
         System.out.println("Initial Count: " + initialCount);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82b2df66a5a34e129983e785b46b162d922821ed
 
         // Step 4: Add new user
         new AdminPage(DriverFactory.getDriver()).clickAdd()
